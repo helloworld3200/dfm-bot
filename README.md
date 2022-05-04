@@ -1,2 +1,2 @@
 # dfm-bot
-A bot for Dr Frost Maths. Either copy JS into into elements or copy script.
+A bot for Dr Frost Maths. In progress, when finished install the extension from releases.
