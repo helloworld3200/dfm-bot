@@ -7,5 +7,6 @@ console.log(answer);
 console.log(answer.length);
 for (var i = 0; answer.length > i; i++) {
 console.log("in the thing");
-document.getElementById("number-"+String(answer.charAt(i))).click()};
+document.getElementById("number-"+String(answer.charAt(i))).click();
+};
 };
