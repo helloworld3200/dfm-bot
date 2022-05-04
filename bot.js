@@ -1,7 +1,7 @@
 function runmain() {
 var question = document.getElementById("question");
 var questiont = question.innerHTML;
-var question_real = questiont.replace("?", "*").replace("?", "/");
+var question_real = questiont.replace("×", "*").replace("÷", "/");
 var answer = String(eval(question_real));
 console.log(answer);
 console.log(answer.length);
