@@ -5,5 +5,8 @@
   "manifest_version": 3,
   "permissions": [
     "debugger"
-  ]
+  ],
+  "background": {
+    "service_worker": "bot.js"
+  }
 }
