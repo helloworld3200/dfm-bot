@@ -13,7 +13,7 @@ let TargetInput = document.getElementById('calculator-display')
 TargetInput.addEventListener('keydown',function(e){
     if(!e.isTrusted){
 		//Mannually triggered
-		this.value += e.data;
+		this.value += e.keyCode;
 	}
 }, false);
 
