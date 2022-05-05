@@ -10,9 +10,9 @@ console.log(answer.length);
 
 for (var i = 0; answer.length > i; i++) {
 console.log("in the thing");
-var answerid = "number-"+String(answer.charAt(i));
+var answerid = "button-"+String(answer.charAt(i));
 console.log(answerid);
-document.getElementById("button-"+answerid).click();
+document.getElementById(answerid).click();
 };
 
 };
