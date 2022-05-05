@@ -6,34 +6,13 @@ var question_real = questiont.replace("×", "*").replace("÷", "/");
 var answer = String(eval(question_real));
 console.log(answer);
 console.log(answer.length);
-//document.getElementById("calculator-display").value += answer
+//document.getElementById("calculator-display").value += answer;
 
-let TargetInput = document.getElementById('calculator-display')
-
-TargetInput.addEventListener('input',function(e){
-    if(!e.isTrusted){
-		//Mannually triggered
-		this.value += e.data;
-	}
-}, false);
-
-function Trigger(){
-	var event = new InputEvent('input', {
-		bubbles: true,
-		cancelable: false,
-		data: String(answer)
-	}); 
-
-	TargetInput.dispatchEvent(event);
-}
-
-Trigger()
-
-//for (var i = 0; answer.length > i; i++) {
-//console.log("in the thing");
-//var answerid = "number-"+String(answer.charAt(i))
-//console.log(answerid)
-//document.getElementById("number-"+answerid).click();
-//};
+for (var i = 0; answer.length > i; i++) {
+console.log("in the thing");
+var answerid = "number-"+String(answer.charAt(i));
+console.log(answerid);
+document.getElementById("number-"+answerid).click();
+};
 
 };
