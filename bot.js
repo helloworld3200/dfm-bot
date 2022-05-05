@@ -9,7 +9,7 @@ function sleep(milliseconds) {
 function startbotting() {
 var playing = true
 var lastquestiont = ""
-while (playing) {
+
 var question = document.getElementById("question");
 var questiont = question.innerHTML;
 if (questiont != lastquestiont) {
@@ -26,6 +26,6 @@ document.getElementById(answerid).click();
 };
 lastquestiont = questiont
 sleep(100)
-};
+
 };
 };
