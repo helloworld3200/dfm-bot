@@ -6,20 +6,22 @@ var question_real = questiont.replace("×", "*").replace("÷", "/");
 var answer = String(eval(question_real));
 console.log(answer);
 console.log(answer.length);
-document.getElementById("calculator-display").value += answer
+//document.getElementById("calculator-display").value += answer
 
 let TargetInput = document.getElementById('calculator-display')
 
-TargetInput.addEventListener('keydown',function(e){
+TargetInput.addEventListener('input',function(e){
     if(!e.isTrusted){
 		//Mannually triggered
-		this.value += e.keyCode;
+		this.value += e.data;
 	}
 }, false);
 
 function Trigger(){
-	var event = new KeyboardEvent('keydown', {
-    keyCode : "13"
+	var event = new InputEvent('input', {
+		bubbles: true,
+		cancelable: false,
+		data: String(answer)
 	}); 
 
 	TargetInput.dispatchEvent(event);
