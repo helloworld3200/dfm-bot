@@ -1,3 +1,10 @@
+function sleep(milliseconds) {
+  const date = Date.now();
+  let currentDate = null;
+  do {
+    currentDate = Date.now();
+  } while (currentDate - date < milliseconds);
+}
 
 function startbotting() {
 var playing = true
@@ -18,6 +25,7 @@ console.log(answerid);
 document.getElementById(answerid).click();
 };
 lastquestiont = questiont
+sleep(100)
 };
 };
 };
