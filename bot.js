@@ -13,4 +13,5 @@ document.getElementById("calculator-display").value += answer
 //console.log(answerid)
 //document.getElementById("number-"+answerid).click();
 //};
+startbot.addEventListener("click", {runmain()})
 };
